@@ -2,8 +2,10 @@ import openai
 
 
 class Chatbot:
+
     def __init__(self):
-        openai.api_key = "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"
+        openai.organization = 'org-XQRB2e4MZHBKqErfhAkxdm6u'
+        openai.api_key = "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"
 
     def get_response(self, user_input):
         response = openai.Completion.create(
@@ -17,6 +19,6 @@ class Chatbot:
 
 if __name__ == "__main__":
     chatbot = Chatbot()
-    response = chatbot.get_response("does pluto is considerd as a planet or not?")
+    response = chatbot.get_response("name the biggest planet in our solar system")
     print(response)
 
