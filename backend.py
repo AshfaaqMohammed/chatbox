@@ -4,8 +4,8 @@ import openai
 class Chatbot:
 
     def __init__(self):
-        openai.organization = 'org-XQRB2e4MZHBKqErfhAkxdm6u'
-        openai.api_key = "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"
+        openai.organization = 'org-id'
+        openai.api_key = "api_key" #use api key generated in your accound
 
     def get_response(self, user_input):
         response = openai.Completion.create(
